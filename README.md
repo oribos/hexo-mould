@@ -4,7 +4,7 @@
 
 ## 使用步骤
 
-#### 第一步 *获取源码* 使用代码 
+#### 第一步 *获取源码* 下载这个hexo模板的代码
 
 git 下载代码
 
@@ -15,7 +15,7 @@ git 下载代码
 `rm -rf .git` 或在windows平台显示隐藏文件，删除隐藏的.git文件夹。
 
 
-#### 第二步 *修改配置*
+#### 第二步 *修改配置* 修改hexo的配置
 
 修改 **source/CNAME**文件里的域名
 
@@ -29,24 +29,24 @@ git 下载代码
 
 **其他文件不需要配置**
 
-#### 第三步 *更新文章*
+#### 第三步 *更新文章* 撰写或者将之前的文章复制到source/_posts目录下
 
 通过`hexo new page 文章.md`新建文档
 
 或者在source/_posts目录下撰写自己的文章
 
 
-#### 第四步 *发布博客* 
+#### 第四步 *发布博客* 通过多种方式发布博客
 
-##### 本地运行hexo的http服务来浏览博客
+##### 方式一 本地运行hexo的http服务来浏览博客
 
 通过`hexo server`来运行hexo的http服务
 
-##### 生成静态文件
+##### 方式二 生成静态文件,部署到nginx或IIS
 
 通过`hexo g`命令生成html静态文件，配合nginx或iis来部署静态网站。或者上传到虚拟主机，云服务器上部署。
 
-##### 将源码推送到github
+##### 方式三 将源码推送到github，触发github actions自动构建
 
 通过以下命令将该仓库里的源码推送到github仓库
 
@@ -69,7 +69,7 @@ git push -u origin main  //推送main分支到origin仓库
 
 github自动构建文件为 `.github/workflows/hexodeploy.yml`文件
 
-#### 第五步 *开启pages*
+#### 第五步 *开启pages* 登录github 设置界面配置pages服务
 
 在github仓库 “Settings”选择“GitHub Pages” source项选择Branch:gh-pages
 如图：![github pages设置](https://base.oribos.city/images/2020/10/20201022095332.png)
